@@ -9,7 +9,12 @@
 <meta property="og:description" content="Small, free, open-source Mac apps that fix the little things macOS gets wrong.">
 <meta property="og:image" content="https://xkorfun.github.io/img/dockpin-menu.png">
 <meta property="og:url" content="https://xkorfun.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="xkorfun">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://xkorfun.github.io/">
 <link rel="icon" href="img/dockpin.png">
+<link rel="apple-touch-icon" href="img/dockpin.png">
 <style>
   :root {
     --bg: #fbfbfd; --fg: #1d1d1f; --muted: #6e6e73; --line: #e5e5ea;
@@ -43,7 +48,9 @@
   .hero h1 { font-size: clamp(34px, 6vw, 54px); line-height: 1.08; letter-spacing: -.025em; margin: 0 0 16px; }
   .hero p { font-size: 20px; color: var(--muted); margin: 0; }
   .hero .line { display: block; text-wrap: balance; }
-  .hero h1 { text-wrap: balance; }
+  .nb { white-space: nowrap; }
+  p { text-wrap: pretty; }
+  html[lang="ko"] body { word-break: keep-all; }
   .apps { display: grid; gap: 20px; padding: 24px 0 72px; }
   .app {
     display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: center;
@@ -59,7 +66,7 @@
     display: flex; align-items: center; gap: 8px; background: var(--code); border-radius: 10px;
     padding: 10px 10px 10px 14px; font: 14px/1.4 ui-monospace, "SF Mono", Menlo, monospace;
   }
-  .install code { flex: 1; min-width: 0; white-space: nowrap; overflow-x: auto; scrollbar-width: none; }
+  .install code { flex: 1; min-width: 0; }
   .install button {
     font: 13px -apple-system, sans-serif; border: 1px solid var(--line); background: var(--card); color: var(--fg);
     border-radius: 7px; padding: 4px 10px; cursor: pointer; flex: none;
@@ -94,8 +101,8 @@
   </header>
 
   <section class="hero">
-    <h1 data-en>Small Mac apps for the little things macOS gets wrong.</h1>
-    <h1 data-ko>macOS의 작은 불편을 고치는 작은 Mac 앱들.</h1>
+    <h1 data-en><span class="line">Small Mac apps for <span class="nb">the little things</span></span> <span class="line">macOS gets wrong.</span></h1>
+    <h1 data-ko><span class="line">macOS의 작은 불편을 고치는</span> <span class="line">작은 Mac 앱들.</span></h1>
     <p data-en><span class="line">Each one does a single job and lives quietly in the menu bar.</span> <span class="line">Free and open source.</span></p>
     <p data-ko><span class="line">하나씩 한 가지 일만 하고, 메뉴바에 조용히 머뭅니다.</span> <span class="line">모두 무료이고 소스가 공개되어 있습니다.</span></p>
   </section>
@@ -107,13 +114,13 @@
           <img src="img/dockpin.png" alt="" width="64" height="64">
           <div>
             <h2>dockpin</h2>
-            <div class="tag">macOS 13+ · Apple silicon &amp; Intel · MIT</div>
+            <div class="tag"><span class="nb">macOS 13+</span> · <span class="nb">Apple silicon &amp; Intel</span> · <span class="nb">MIT</span></div>
           </div>
         </div>
         <p data-en>Keeps the Dock on one display. With more than one monitor, the Dock stops jumping to whichever screen you touch the bottom of, and comes back when macOS moves it after sleep.</p>
         <p data-ko>Dock을 한 화면에 고정합니다. 모니터가 여러 대여도 아래쪽에 커서가 닿은 화면으로 Dock이 넘어가지 않고, 절전 뒤 macOS가 옮겨 놓아도 다시 데려옵니다.</p>
         <div class="install">
-          <code>brew install --cask esteban-eg-kim/tap/dockpin</code>
+          <code>brew install --cask <span class="nb">esteban-eg-kim/tap/dockpin</span></code>
           <button type="button" class="copy"><span data-en>Copy</span><span data-ko>복사</span></button>
         </div>
         <div class="links">

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xkorfun.github.io/sitemap.xml
