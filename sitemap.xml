@@ -1,23 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://xkorfun.github.io/</loc>
-    <lastmod>2026-10-30</lastmod>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://xkorfun.github.io/dockpin/</loc>
     <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/dockpin/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/dockpin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/dockpin/"/>
+  </url>
+  <url>
+    <loc>https://xkorfun.github.io/ko/dockpin/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/dockpin/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/dockpin/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/dockpin/"/>
   </url>
   <url>
     <loc>https://xkorfun.github.io/dockpin/manual/</loc>
     <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/dockpin/manual/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/dockpin/manual/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/dockpin/manual/"/>
+  </url>
+  <url>
+    <loc>https://xkorfun.github.io/ko/dockpin/manual/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/dockpin/manual/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/dockpin/manual/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/dockpin/manual/"/>
+  </url>
+  <url>
+    <loc>https://xkorfun.github.io/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/"/>
+  </url>
+  <url>
+    <loc>https://xkorfun.github.io/ko/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/"/>
   </url>
   <url>
     <loc>https://xkorfun.github.io/winlego/</loc>
     <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/winlego/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/winlego/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/winlego/"/>
+  </url>
+  <url>
+    <loc>https://xkorfun.github.io/ko/winlego/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/winlego/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/winlego/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/winlego/"/>
   </url>
   <url>
     <loc>https://xkorfun.github.io/winlego/manual/</loc>
     <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/winlego/manual/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/winlego/manual/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/winlego/manual/"/>
+  </url>
+  <url>
+    <loc>https://xkorfun.github.io/ko/winlego/manual/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://xkorfun.github.io/winlego/manual/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://xkorfun.github.io/ko/winlego/manual/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://xkorfun.github.io/winlego/manual/"/>
   </url>
 </urlset>

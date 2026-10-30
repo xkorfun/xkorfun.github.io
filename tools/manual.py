@@ -165,6 +165,7 @@ def main():
     tmpl = (SITE / "tools" / "manual.html").read_text()
     page = (tmpl.replace("{{app}}", app)
             .replace("{{title_en}}", html.escape(en.title))
+            .replace("{{title_ko}}", html.escape(ko.title))
             .replace("{{toc_en}}", toc(en)).replace("{{toc_ko}}", toc(ko))
             .replace("{{body_en}}", bodies[0]).replace("{{body_ko}}", bodies[1]))
     dest = SITE / app / "manual" / "index.html"
