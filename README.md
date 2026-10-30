@@ -12,4 +12,10 @@ Plain HTML, no build step. GitHub Pages serves `main` as is.
   don't edit it, rerun `tools/manual.py <app> <repo>/docs/manual.md <repo>/docs/manual.ko.md`.
   The script copies the images the manual uses into `/<app>/`.
 
+- `brand/`: the site's own icon. `xkorfun.icon` is an Icon Composer document (same style
+  as the app icons: flat SVG layers, Liquid Glass applied by the system), `og.html` is the
+  1200×630 share image. `brand/make.sh` (needs Xcode and Chrome) writes `img/xkorfun.png`,
+  `favicon.ico`, `favicon-96.png`, `apple-touch-icon.png` and `img/og.png`. Rerun it after
+  adding an app icon to `og.html`.
+
 Preview locally: `python3 -m http.server 47821` and open http://localhost:47821/.
