@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dockpin · keep the Mac Dock on one display</title>
+<meta name="description" content="dockpin is a free, open-source menu bar app that keeps the macOS Dock on the display you choose, so it stops jumping between monitors.">
+<meta property="og:title" content="dockpin · keep the Mac Dock on one display">
+<meta property="og:description" content="A free, open-source menu bar app that keeps the macOS Dock on the display you choose.">
+<meta property="og:image" content="https://xkorfun.github.io/img/dockpin-menu.png">
+<meta property="og:url" content="https://xkorfun.github.io/dockpin/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="xkorfun">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://xkorfun.github.io/dockpin/">
+<link rel="icon" href="/img/dockpin.png">
+<link rel="apple-touch-icon" href="/img/dockpin.png">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="crumbs"><a class="brand" href="/">xkor<span>fun</span></a> / dockpin</span>
+    <nav class="nav">
+      <a href="manual/"><span data-en>Manual</span><span data-ko>설명서</span></a>
+      <a href="https://github.com/esteban-eg-kim/dockpin">GitHub</a>
+      <span class="lang">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+      </span>
+    </nav>
+  </header>
+
+  <section class="app-hero">
+    <img src="/img/dockpin.png" alt="" width="112" height="112">
+    <div>
+      <h1>dockpin</h1>
+      <p data-en><span class="line">Keep the Dock on one display.</span></p>
+      <p data-ko><span class="line">Dock을 한 화면에 고정합니다.</span></p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p data-en>With more than one monitor, macOS moves the Dock to whichever screen you push the pointer against the bottom of, and sometimes after sleep all by itself. There is no setting to stop it. dockpin is.</p>
+    <p data-ko>모니터가 여러 대면 macOS는 커서를 아래쪽에 밀어붙인 화면으로 Dock을 옮기고, 절전에서 깨어날 때는 저절로 옮기기도 합니다. 이걸 막는 설정은 없습니다. dockpin이 그 설정입니다.</p>
+    <div class="install">
+      <code>brew install --cask <span class="nb">esteban-eg-kim/tap/dockpin</span></code>
+      <button type="button" class="copy"><span data-en>Copy</span><span data-ko>복사</span></button>
+    </div>
+    <div class="links">
+      <a href="https://github.com/esteban-eg-kim/dockpin/releases/latest"><span data-en>Download the app</span><span data-ko>앱 다운로드</span></a>
+      <a href="manual/"><span data-en>Read the manual</span><span data-ko>설명서 보기</span></a>
+      <span class="tag"><span class="nb">macOS 13+</span> · <span class="nb">Apple silicon &amp; Intel</span> · <span class="nb">MIT</span></span>
+    </div>
+  </div>
+
+  <div class="demo">
+    <video data-en src="/dockpin/media/demo-en.mp4" autoplay muted loop playsinline aria-label="dockpin demo"></video>
+    <video data-ko src="/dockpin/media/demo-ko.mp4" autoplay muted loop playsinline aria-label="dockpin 데모"></video>
+  </div>
+
+  <section class="features">
+    <div class="feature">
+      <h3 data-en>Pick a display</h3><h3 data-ko>화면을 고르면 끝</h3>
+      <p data-en>Choose it in the menu bar and the Dock moves there at once.</p>
+      <p data-ko>메뉴바에서 고르면 Dock이 바로 그 화면으로 옮겨 갑니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>No more jumping</h3><h3 data-ko>더 이상 안 넘어감</h3>
+      <p data-en>Pushing against the bottom of another screen no longer pulls the Dock over. The pointer moves as usual.</p>
+      <p data-ko>다른 화면 아래쪽에 커서를 밀어도 Dock이 따라오지 않습니다. 커서는 평소처럼 움직입니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>Back after sleep</h3><h3 data-ko>절전 뒤에도 제자리</h3>
+      <p data-en>When macOS moves the Dock as displays wake, dockpin brings it home a few seconds later.</p>
+      <p data-ko>모니터가 깨어나며 macOS가 Dock을 옮겨도 몇 초 뒤 다시 데려옵니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>Hold ⌥ to move it</h3><h3 data-ko>⌥ 누르면 이동 허용</h3>
+      <p data-en>Want the Dock somewhere else for a moment? Hold Option and push, the way you always did.</p>
+      <p data-ko>잠깐 다른 화면에 두고 싶으면 Option을 누른 채 평소처럼 밀면 됩니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>Unplug-aware</h3><h3 data-ko>모니터를 뽑아도</h3>
+      <p data-en>Pick a fallback for when the pinned display is gone. Plug it back in and the Dock returns.</p>
+      <p data-ko>고정한 화면이 빠졌을 때 쓸 화면을 정해 두면, 다시 꽂는 순간 Dock이 돌아옵니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>One permission, no network</h3><h3 data-ko>권한 하나, 네트워크 없음</h3>
+      <p data-en>Needs only Accessibility. Collects nothing, sends nothing, and the source is open.</p>
+      <p data-ko>손쉬운 사용 권한 하나면 됩니다. 아무것도 모으거나 보내지 않고, 소스가 공개되어 있습니다.</p>
+    </div>
+  </section>
+
+  <section class="split">
+    <div>
+      <h2 data-en>Only the edges that matter</h2>
+      <h2 data-ko>막을 곳만 막습니다</h2>
+      <p data-en>dockpin guards the outer stretch of each other display's Dock edge. Where screens touch, the pointer crosses over as usual, so stacked monitors keep working.</p>
+      <p data-ko>다른 화면의 Dock 쪽 가장자리 중 바깥 구간만 막습니다. 화면끼리 맞닿은 곳은 그대로 지나갈 수 있어서, 위아래로 쌓은 모니터도 평소처럼 씁니다.</p>
+    </div>
+    <div>
+      <img data-en src="/dockpin/img/edges-en.png" alt="Guarded and open edges" loading="lazy">
+      <img data-ko src="/dockpin/img/edges-ko.png" alt="막힌 가장자리와 열린 구간" loading="lazy">
+    </div>
+  </section>
+
+  <section class="split">
+    <div>
+      <h2 data-en>Lives in the menu bar</h2>
+      <h2 data-ko>메뉴바에 조용히</h2>
+      <p data-en>Turn it on or off, choose the display, set the fallback, open at login. That's the whole app.</p>
+      <p data-ko>켜고 끄기, 화면 고르기, 대체 화면, 로그인 시 실행. 앱 전체가 이 메뉴 하나입니다.</p>
+    </div>
+    <div><img src="/img/dockpin-menu.png" alt="The dockpin menu" width="1340" height="656" loading="lazy"></div>
+  </section>
+
+  <section class="section">
+    <h2 data-en>Get started</h2>
+    <h2 data-ko>시작하기</h2>
+    <p data-en>Install with Homebrew, open dockpin, and allow Accessibility when it asks. The <a href="manual/">manual</a> covers the rest, from the menu to troubleshooting.</p>
+    <p data-ko>Homebrew로 설치하고 dockpin을 열어 손쉬운 사용 권한을 허용하면 끝입니다. 메뉴부터 문제 해결까지는 <a href="manual/">설명서</a>에 있습니다.</p>
+    <p><a class="btn" href="manual/"><span data-en>Read the manual</span><span data-ko>설명서 보기</span></a></p>
+  </section>
+
+  <footer>
+    <span data-en>Made by esteban. Every app here is free and open source.</span>
+    <span data-ko>esteban이 만듭니다. 여기 있는 앱은 모두 무료이며 소스가 공개되어 있습니다.</span>
+  </footer>
+</div>
+<script src="/assets/site.js"></script>
+</body>
+</html>
