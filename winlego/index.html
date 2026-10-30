@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>winlego · snap Mac windows into zones, and keep them there</title>
+<meta name="description" content="winlego is a free, open-source menu bar app that gives each Mac display a zone layout, snaps windows into zones, and puts them back when they drift.">
+<meta property="og:title" content="winlego · snap Mac windows into zones, and keep them there">
+<meta property="og:description" content="A free, open-source menu bar app that snaps Mac windows into zones on every display and keeps them there.">
+<meta property="og:image" content="https://xkorfun.github.io/img/winlego-zones.png">
+<meta property="og:url" content="https://xkorfun.github.io/winlego/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="xkorfun">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://xkorfun.github.io/winlego/">
+<link rel="icon" href="/img/winlego.png">
+<link rel="apple-touch-icon" href="/img/winlego.png">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="crumbs"><a class="brand" href="/">xkor<span>fun</span></a> / winlego</span>
+    <nav class="nav">
+      <a href="manual/"><span data-en>Manual</span><span data-ko>설명서</span></a>
+      <a href="https://github.com/esteban-eg-kim/winlego">GitHub</a>
+      <span class="lang">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+      </span>
+    </nav>
+  </header>
+
+  <section class="app-hero">
+    <img src="/img/winlego.png" alt="" width="112" height="112">
+    <div>
+      <h1>winlego</h1>
+      <p data-en><span class="line">Snap windows into zones,</span> <span class="line">and keep them there.</span></p>
+      <p data-ko><span class="line">창을 영역에 맞춰 넣고,</span> <span class="line">그 자리를 지킵니다.</span></p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <p data-en>With more than one display, windows drift: an app reopens in the wrong place, a monitor wakes up and everything shuffles, and you spend the morning dragging things back. winlego gives each display a zone layout, puts windows into zones, and keeps them there.</p>
+    <p data-ko>모니터가 여러 대면 창이 자꾸 흩어집니다. 앱이 엉뚱한 자리에서 열리고, 모니터가 깨어나면 전부 뒤섞이고, 아침마다 창을 끌어다 놓는 데 시간을 씁니다. winlego는 디스플레이마다 영역 레이아웃을 정하고, 창을 영역에 넣고, 그 자리를 지켜 줍니다.</p>
+    <div class="install">
+      <code>brew install --cask <span class="nb">esteban-eg-kim/tap/winlego</span></code>
+      <button type="button" class="copy"><span data-en>Copy</span><span data-ko>복사</span></button>
+    </div>
+    <div class="links">
+      <a href="https://github.com/esteban-eg-kim/winlego/releases/latest"><span data-en>Download the app</span><span data-ko>앱 다운로드</span></a>
+      <a href="manual/"><span data-en>Read the manual</span><span data-ko>설명서 보기</span></a>
+      <span class="tag"><span class="nb">macOS 13+</span> · <span class="nb">Apple silicon &amp; Intel</span> · <span class="nb">MIT</span></span>
+    </div>
+  </div>
+
+  <div class="demo">
+    <video data-en src="/winlego/media/demo-en.mp4" autoplay muted loop playsinline aria-label="winlego demo"></video>
+    <video data-ko src="/winlego/media/demo-ko.mp4" autoplay muted loop playsinline aria-label="winlego 데모"></video>
+  </div>
+
+  <section class="features">
+    <div class="feature">
+      <h3 data-en>A layout per display</h3><h3 data-ko>디스플레이마다 레이아웃</h3>
+      <p data-en>Halves, thirds, ⅔ + ⅓, a 2×2 grid, rows for a portrait monitor, the whole screen for a small one. Or draw your own.</p>
+      <p data-ko>반반, 3열, ⅔ + ⅓, 2×2 격자, 세로 모니터용 상하, 작은 모니터용 전체 화면. 직접 그릴 수도 있습니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>Hold ⇧ and drop</h3><h3 data-ko>⇧ 누르고 놓기</h3>
+      <p data-en>Drag a window with Shift held and the zones appear. Drop it on one and it fills the zone exactly.</p>
+      <p data-ko>Shift를 누른 채 창을 끌면 영역이 나타납니다. 하나에 놓으면 창이 영역에 꼭 맞춰집니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>Merge zones with ⌃</h3><h3 data-ko>⌃ 로 영역 합치기</h3>
+      <p data-en>Add Control mid-drag and every zone you pass over joins in. The window spans them all.</p>
+      <p data-ko>끄는 도중 Control을 더하면 지나가는 영역이 모두 합쳐지고, 창이 그 전부를 차지합니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>It stays put</h3><h3 data-ko>제자리 유지</h3>
+      <p data-en>When an app moves its own window, or a display sleeps and wakes, winlego puts the window back. Drag it away yourself and it lets go.</p>
+      <p data-ko>앱이 창을 스스로 옮기거나 모니터가 절전에서 깨어나도 제자리로 돌려놓습니다. 직접 끌어내면 놓아줍니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>Rules and shortcuts</h3><h3 data-ko>규칙과 단축키</h3>
+      <p data-en>“Terminal always goes to the right third.” Or step through zones and displays with ⌃⌥ and the arrow keys.</p>
+      <p data-ko>“터미널은 항상 오른쪽 1/3.” 또는 ⌃⌥ 와 화살표로 영역과 디스플레이를 옮겨 다닙니다.</p>
+    </div>
+    <div class="feature">
+      <h3 data-en>One permission, no network</h3><h3 data-ko>권한 하나, 네트워크 없음</h3>
+      <p data-en>Needs only Accessibility. Collects nothing, sends nothing, and the source is open.</p>
+      <p data-ko>손쉬운 사용 권한 하나면 됩니다. 아무것도 모으거나 보내지 않고, 소스가 공개되어 있습니다.</p>
+    </div>
+  </section>
+
+  <section class="split">
+    <div>
+      <h2 data-en>Resize on the real screen</h2>
+      <h2 data-ko>실제 화면에서 크기 조절</h2>
+      <p data-en>Drag the boundary between two placed windows and both follow live. Let go, and winlego asks whether to keep the new proportions as the display's layout.</p>
+      <p data-ko>배정된 두 창 사이의 경계를 끌면 양쪽 창이 실시간으로 따라옵니다. 놓으면 새 비율을 그 디스플레이의 레이아웃으로 저장할지 묻습니다.</p>
+    </div>
+    <div>
+      <img data-en src="/winlego/img/boundary-en.png" alt="After dragging the boundary, winlego asks whether to save the new proportions" loading="lazy">
+      <img data-ko src="/winlego/img/boundary-ko.png" alt="경계를 끈 뒤 새 비율을 저장할지 묻는 팝업" loading="lazy">
+    </div>
+  </section>
+
+  <section class="split">
+    <div>
+      <h2 data-en>Lives in the menu bar</h2>
+      <h2 data-ko>메뉴바에 조용히</h2>
+      <p data-en>Move the focused window to any zone on any display, pick layouts, manage rules. Everything else is in Settings.</p>
+      <p data-ko>현재 창을 어느 디스플레이의 어느 영역으로든 옮기고, 레이아웃을 고르고, 규칙을 관리합니다. 나머지는 설정에 있습니다.</p>
+    </div>
+    <div><img src="/winlego/img/menu.png" alt="The winlego menu: Move Window to, a display, a zone" loading="lazy"></div>
+  </section>
+
+  <section class="section">
+    <h2 data-en>Get started</h2>
+    <h2 data-ko>시작하기</h2>
+    <p data-en>Install with Homebrew, open winlego, and allow Accessibility when it asks. Pick a layout for each display, then hold ⇧ and drag a window onto a zone. The <a href="manual/">manual</a> covers rules, the layout editor and troubleshooting.</p>
+    <p data-ko>Homebrew로 설치하고 winlego를 열어 손쉬운 사용 권한을 허용합니다. 디스플레이마다 레이아웃을 고른 뒤 ⇧ 를 누른 채 창을 영역으로 끌어 놓으면 됩니다. 규칙, 레이아웃 에디터, 문제 해결은 <a href="manual/">설명서</a>에 있습니다.</p>
+    <p><a class="btn" href="manual/"><span data-en>Read the manual</span><span data-ko>설명서 보기</span></a></p>
+  </section>
+
+  <footer>
+    <span data-en>Made by esteban. Every app here is free and open source.</span>
+    <span data-ko>esteban이 만듭니다. 여기 있는 앱은 모두 무료이며 소스가 공개되어 있습니다.</span>
+  </footer>
+</div>
+<script src="/assets/site.js"></script>
+</body>
+</html>

@@ -68,7 +68,7 @@
 <p><strong>Unplugging the pinned display.</strong> While it is gone, dockpin keeps the Dock where it is now, or moves it to the display chosen under <strong>If It's Unplugged</strong>. Plug the pinned display back in and the Dock returns to it. A laptop that you sometimes use docked and sometimes alone is a typical case: pin the external display, and set the built-in display as the fallback.</p>
 <p><strong>Dock auto-hide.</strong> Works the same as a visible Dock: dockpin asks the Dock where it is, hidden or not. (If a future macOS removes that, dockpin falls back to looking at the screen layout, which can't see a hidden Dock; then it only moves the Dock when you pick a display.)</p>
 <p><strong>Displays waking from sleep.</strong> The Dock may briefly appear on another display while the displays come back, then return to the pinned one by itself.</p>
-<p><strong>Hot corners.</strong> Hot corners at the Dock edge of the *other* displays don't fire, because those moves are dropped. Hot corners on the pinned display and on the other edges work as usual.</p>
+<p><strong>Hot corners.</strong> Hot corners at the Dock edge of the <em>other</em> displays don't fire, because those moves are dropped. Hot corners on the pinned display and on the other edges work as usual.</p>
 <p><strong>Hovering at the very bottom.</strong> Apps on the other displays don't get hover events in the 4-point strip at their Dock edge. Clicks still go through.</p>
 <h2 id="en-troubleshooting">Troubleshooting</h2>
 <p><strong>The pin is crossed out, or the menu shows "⚠️ Allow Accessibility Access…".</strong> The permission is missing. Open System Settings from the menu item and turn dockpin on. If it already looks on, see the next item.</p>
@@ -142,7 +142,7 @@ open build/dockpin.app</code></pre>
 <p><strong>고정한 화면을 뽑았을 때.</strong> 그 화면이 없는 동안에는 Dock을 지금 있는 화면에 두거나, <strong>If It's Unplugged</strong> 에서 고른 화면으로 옮깁니다. 노트북을 외장 모니터에 연결해서도 쓰고 혼자서도 쓴다면, 외장 모니터에 고정하고 대체 화면을 내장 화면으로 정해 두면 됩니다. 고정 화면을 다시 연결하면 Dock이 그 화면으로 돌아갑니다.</p>
 <p><strong>Dock 자동 가리기.</strong> 보이는 Dock과 똑같이 동작합니다. dockpin이 Dock에게 직접 위치를 물어보기 때문에 숨어 있어도 압니다. (나중에 macOS에서 이 방법이 막히면 화면 배치로 추측하는 방식으로 돌아가는데, 그 방식은 숨은 Dock을 못 봅니다. 그때는 메뉴에서 화면을 직접 고를 때만 Dock을 옮깁니다.)</p>
 <p><strong>모니터가 절전에서 깨어날 때.</strong> 화면들이 켜지는 동안 Dock이 잠깐 다른 화면에 나타났다가, 곧 고정 화면으로 알아서 돌아옵니다.</p>
-<p><strong>핫코너.</strong> *다른* 화면의 Dock 쪽 핫코너는 동작하지 않습니다(그 움직임을 버리기 때문). 고정 화면의 핫코너와 다른 모서리의 핫코너는 그대로 동작합니다.</p>
+<p><strong>핫코너.</strong> <em>다른</em> 화면의 Dock 쪽 핫코너는 동작하지 않습니다(그 움직임을 버리기 때문). 고정 화면의 핫코너와 다른 모서리의 핫코너는 그대로 동작합니다.</p>
 <p><strong>맨 아래에서의 hover.</strong> 다른 화면의 Dock 쪽 4pt 띠 안에서는 앱이 hover 이벤트를 받지 못합니다. 클릭은 그대로 됩니다.</p>
 <h2 id="ko-문제-해결">문제 해결</h2>
 <p><strong>핀에 사선이 있거나, 메뉴에 "⚠️ Allow Accessibility Access…" 가 보인다.</strong> 권한이 없는 상태입니다. 그 메뉴로 시스템 설정을 열고 dockpin을 켜 주세요. 이미 켜져 있는 것처럼 보이면 다음 항목을 보세요.</p>
@@ -155,7 +155,7 @@ open build/dockpin.app</code></pre>
 <ul><li>화면이 잠겨 있었다면 잠금을 풀 때까지 기다립니다.</li><li>로그에 "giving up" 이 있으면 세 번 시도해도 안 된 것이니 화면을 다시 골라 주세요.</li><li>고정 화면의 Dock 쪽 가장자리 전체가 다른 화면과 맞닿아 있으면 밀 수 있는 바깥 구간이 없어서 옮길 수 없습니다. <code>Option</code> 으로 옮기거나 시스템 설정 › 디스플레이에서 배치를 바꿔 주세요.</li></ul>
 <p><strong>"Apple에서 악성 소프트웨어가 있는지 확인할 수 없기 때문에 dockpin을 열 수 없습니다."</strong> <code>xattr -dr com.apple.quarantine /Applications/dockpin.app</code> 을 한 번 실행하거나 Homebrew로 설치하세요.</p>
 <h2 id="ko-앱-없이-하고-싶다면">앱 없이 하고 싶다면</h2>
-<p>macOS에도 Dock을 고정하는 방법이 하나 있습니다. 시스템 설정 › 데스크탑 및 Dock › Mission Control 에서 <strong>디스플레이마다 별도의 Spaces 사용</strong>(영문 *Displays have separate Spaces*) 을 끄고 로그아웃했다가 다시 로그인하면, Dock과 메뉴바가 주 디스플레이에만 머뭅니다(주 디스플레이는 시스템 설정 › 디스플레이에서 메뉴바를 끌어 정합니다).</p>
+<p>macOS에도 Dock을 고정하는 방법이 하나 있습니다. 시스템 설정 › 데스크탑 및 Dock › Mission Control 에서 <strong>디스플레이마다 별도의 Spaces 사용</strong>(영문 <em>Displays have separate Spaces</em>) 을 끄고 로그아웃했다가 다시 로그인하면, Dock과 메뉴바가 주 디스플레이에만 머뭅니다(주 디스플레이는 시스템 설정 › 디스플레이에서 메뉴바를 끌어 정합니다).</p>
 <p>대신 메뉴바가 주 디스플레이에만 생기고, 창이 두 화면에 걸칠 수 있으며, 전체 화면 앱이 한 화면이 아니라 모든 화면을 차지합니다. dockpin은 별도 Spaces를 그대로 두고, 주 디스플레이가 아닌 화면에도 Dock을 고정할 수 있습니다.</p>
 <h2 id="ko-개인정보">개인정보</h2>
 <p>dockpin에는 네트워크 코드가 없고, 아무것도 수집하지 않으며, 자기 설정(고정 화면과 메뉴 토글)만 <code>~/Library/Preferences/io.github.esteban-eg-kim.dockpin.plist</code> 에 저장합니다. 보는 것은 마우스 움직임뿐입니다. 소스는 <a href="https://github.com/esteban-eg-kim/dockpin">GitHub</a>에 전부 있습니다.</p>

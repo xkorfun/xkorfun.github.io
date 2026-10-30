@@ -7,8 +7,8 @@ The manuals stay the source of truth in the app repo; rerun this after changing 
 Images they reference (paths relative to docs/) are copied to /<app>/; a GIF with an
 MP4 of the same name next to it becomes a looping video.
 
-Handles the Markdown the manuals use: headings, paragraphs, lists (one level of
-nesting), tables, fenced code, images, links, **bold** and `code`.
+Handles the Markdown the manuals use: headings (## and ###), paragraphs, lists (one level of
+nesting), tables, fenced code, images, links, **bold**, *italic* and `code`.
 """
 import html
 import re
@@ -68,6 +68,7 @@ class Page:
         text = re.sub(r"\[([^\]]+)\]\(([^)]+)\)",
                       lambda m: f'<a href="{self.link(m.group(2))}">{m.group(1)}</a>', text)
         text = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", text)
+        text = re.sub(r"(?<![\w*])\*([^*\s][^*]*?)\*(?![\w*])", r"<em>\1</em>", text)
         return re.sub(r"\0(\d+)\0", lambda m: codes[int(m.group(1))], text)
 
     def render(self):
@@ -92,6 +93,10 @@ class Page:
                 anchor = f"{self.lang}-{slug(text)}"
                 self.toc.append((anchor, text))
                 out.append(f'<h2 id="{anchor}">{self.inline(text)}</h2>')
+                i += 1
+            elif line.startswith("### "):
+                text = line[4:].strip()
+                out.append(f'<h3 id="{self.lang}-{slug(text)}">{self.inline(text)}</h3>')
                 i += 1
             elif line.startswith("|"):
                 rows = []
